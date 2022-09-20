@@ -61,7 +61,7 @@ jobs:
           docker run --shm-size=1g --rm sitespeedio/sitespeed.io https://github.com/procesor2017/gitHubWorkShop -b chrome
           
   playwright:
-    needs: [siteSpeedIO]
+    needs: siteSpeedIO
     name: Playwright Test
     runs-on: ubuntu-latest
     steps:
