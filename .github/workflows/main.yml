@@ -83,13 +83,11 @@ jobs:
       - name: Run Robot
         run: |
           docker run --shm-size=1g \
-          -v ${{ github.workspace }}/test/RobotFramework:/opt/robotframework/reports:Z \
-          -v ${{ github.workspace }}/test/RobotFramework:/opt/robotframework/tests:Z \
+          -v ${{ github.workspace }}/test/RobotFrameWork:/opt/robotframework/reports:Z \
+          -v ${{ github.workspace }}/test/RobotFrameWork:/opt/robotframework/tests:Z \
           -e BROWSER=chrome \
           --user=1001:1001 \
           ppodgorsek/robot-framework:latest
-
-
 
 
 
